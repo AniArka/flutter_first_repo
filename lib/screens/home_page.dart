@@ -7,11 +7,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 119, 7, 144),
         title: Center(child: Text("Catalog APP")),
       ),
       body: Center(
         child: Container(
-          child: Text("wellcome $name it's your $day th day"),
+          child: Text("wellcome $name it's your $day th day",
+              style: TextStyle(color: Colors.green, fontSize: 20)),
         ),
       ),
       drawer: Drawer(),
