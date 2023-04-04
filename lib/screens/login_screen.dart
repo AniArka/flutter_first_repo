@@ -75,8 +75,8 @@ class _LoginPageState extends State<LoginPage> {
                       validator: (String? value) {
                         if (value != null && value.isEmpty) {
                           return "password can't be empty";
-                        } else if (value != null && value.length < 6) {
-                          return "password must have atlest 6 charter ";
+                        } else if (value != null && value.length < 8) {
+                          return "password must have atlest 8 charter ";
                         }
                         return null;
                       },
