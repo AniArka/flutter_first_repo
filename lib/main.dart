@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_1/screens/login_screen.dart';
 import 'package:test_1/utils/routes.dart';
+import 'package:test_1/widgets/themes.dart';
 import 'screens/home_page.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //home: HomePage(), //ether use this or routes
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.purple),
+      theme: MyTheme.themeData,
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(brightness: Brightness.dark),
       routes: {
